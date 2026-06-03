@@ -1,99 +1,209 @@
-# 🍕 Pizza Management System
+# 🍕 Restaurant Management System
 
-A desktop-based restaurant management system developed using **C# WinForms** and **MySQL**. The system is designed to simplify restaurant operations by providing separate interfaces for administrators, cashiers, chefs, and stock management.
+A desktop-based restaurant management system developed using **C# WinForms** and **MySQL**. The application is designed to manage restaurant operations through separate interfaces for administrators, cashiers, chefs, and inventory management. The system includes role-based authentication, order processing, kitchen queue management, and stock control.
+
+---
 
 ## 🚀 Features
 
+### 🔐 Role-Based Authentication System
+
+The application uses a database-driven login system.
+
+Employees log in using credentials stored in the MySQL database. After successful authentication, the system automatically opens the appropriate interface according to the employee's role.
+
+Supported roles:
+
+* Administrator
+* Cashier
+* Chef
+
+This ensures that users only have access to the functions required for their responsibilities.
+
+---
+
 ### 👨‍💼 Administrator Panel
 
-* Employee management (Add, Update, Remove)
-* User account management
-* Staff role assignment
-* Access to different system modules
-* Secure admin-only controls
+The administrator panel is used to manage restaurant employees and system access.
+
+Features:
+
+* Add new employees
+* Update employee information
+* Remove employees
+* Assign job roles
+* Manage user accounts
+* Access other system modules
+* View employee records
+
+---
 
 ### 💰 Cashier Panel
 
-* Create customer orders
-* Select menu items, extras, and drinks
-* Calculate order totals automatically
-* Manage payments and change calculations
+The cashier panel is responsible for customer order management and payment operations.
+
+Features:
+
+* Create new customer orders
+* Select menu items
+* Add extra products
+* Add drinks
+* Calculate total order cost
+* Process customer payments
+* Calculate change automatically
 * Send orders to the kitchen queue
+* View completed orders
+
+---
 
 ### 👨‍🍳 Chef Panel
 
-* View active order queue in real time
+The chef panel allows kitchen staff to monitor and manage incoming orders.
+
+Features:
+
+* View active order queue
 * Monitor incoming customer orders
-* Mark completed orders as finished
-* Remove completed orders from the queue
+* Track pending kitchen tasks
+* Mark orders as completed
+* Remove finished orders from the queue
+* Refresh queue data in real time
+
+---
 
 ### 📦 Stock Management Panel
 
-* Add new products
+The stock management panel helps administrators manage restaurant inventory.
+
+Features:
+
+* Add products to inventory
 * Update product information
-* Remove products from inventory
-* Manage product quantities and pricing
+* Remove products
+* Manage product quantities
+* Manage product prices
 * Monitor available stock
+* View inventory records
 
-## 🏗️ System Architecture
+---
 
-The application consists of four main modules:
+## 🏗️ System Workflow
 
-| Module        | Description                           |
-| ------------- | ------------------------------------- |
-| Admin Panel   | Employee and system management        |
-| Cashier Panel | Order creation and payment operations |
-| Chef Panel    | Kitchen order queue management        |
-| Stock Panel   | Inventory and product management      |
+1. Employees log into the system using their credentials.
+2. The application verifies user information through the MySQL database.
+3. Based on the employee's role, the corresponding panel is opened automatically.
+4. Cashiers create customer orders.
+5. Orders are sent to the chef queue.
+6. Chefs prepare and complete orders.
+7. Administrators manage employees and inventory through dedicated panels.
+8. All information is stored and synchronized using the MySQL database.
 
-All modules communicate with a MySQL database to ensure data consistency across the system.
+---
 
 ## 🛠️ Technologies Used
 
 * C#
-* WinForms
+* Windows Forms (WinForms)
 * MySQL
 * ADO.NET
 * Visual Studio
 
+---
+
 ## 🗄️ Database
 
-The application uses a MySQL database for:
+The application uses a MySQL database to store:
 
-* Employee records
-* User authentication
+* Employee information
+* Login credentials
+* User roles
 * Product information
-* Order tracking
-* Inventory management
+* Inventory records
+* Customer orders
+* Order status information
 
-The database creation script is included in the repository.
+A SQL database script is included in the repository to simplify setup and deployment.
+
+---
 
 ## 📷 Screenshots
 
-### Administrator Panel
+### Login & Administrator Panel
+
+Role-based authentication and employee management.
 
 ![Admin Panel](screenshots/admin_panel.png)
 
 ### Cashier Panel
 
+Order creation, payment processing, and customer service operations.
+
 ![Cashier Panel](screenshots/cashier_panel.png)
 
 ### Chef Panel
+
+Kitchen queue management and order completion tracking.
 
 ![Chef Panel](screenshots/chef_panel.png)
 
 ### Stock Management Panel
 
+Inventory control, product management, and stock monitoring.
+
 ![Stock Panel](screenshots/stock_panel.png)
+
+---
 
 ## ⚙️ Installation
 
-1. Clone the repository.
+### Requirements
+
+* Visual Studio
+* MySQL Server
+* .NET Framework
+
+### Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/restaurant-management-system.git
+```
+
 2. Import the provided SQL file into MySQL.
-3. Update the connection string if required.
-4. Open the solution file in Visual Studio.
-5. Build and run the application.
 
-## 🎯 Purpose
+3. Update the database connection string if necessary.
 
-This project was developed as an academic software engineering project to demonstrate desktop application development, database integration, role-based access control, and restaurant workflow management.
+4. Open the solution file (.sln) in Visual Studio.
+
+5. Build and run the project.
+
+---
+
+## 🎯 Educational Purpose
+
+This project was developed as an academic software engineering project to demonstrate:
+
+* Desktop application development
+* Database integration
+* Role-based access control
+* Inventory management
+* Order processing systems
+* Multi-user restaurant workflow management
+
+---
+
+## 👨‍💻 Author
+
+**Emrah Yurdusev**
+
+Software Engineering Student
+
+European University of Lefke
+
+**Ahmet Özçelebi**
+
+Software Engineering Student
+
+European University of Lefke
+
