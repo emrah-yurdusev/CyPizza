@@ -124,37 +124,6 @@ The application uses a MySQL database to store:
 
 A SQL database script is included in the repository to simplify setup and deployment.
 
----
-
-## 📷 Screenshots
-
-### Login & Administrator Panel
-
-Role-based authentication and employee management.
-
-![Admin Panel](<img width="1139" height="741" alt="image" src="https://github.com/user-attachments/assets/c40d0926-956a-47b7-81c7-13da4a391cbf" />
-)
-
-### Cashier Panel
-
-Order creation, payment processing, and customer service operations.
-
-![Cashier Panel](screenshots/cashier_panel.png)
-
-### Chef Panel
-
-Kitchen queue management and order completion tracking.
-
-![Chef Panel](screenshots/chef_panel.png)
-
-### Stock Management Panel
-
-Inventory control, product management, and stock monitoring.
-
-![Stock Panel](screenshots/stock_panel.png)
-
----
-
 ## ⚙️ Installation
 
 ### Requirements
