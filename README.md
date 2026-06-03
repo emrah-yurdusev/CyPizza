@@ -137,7 +137,7 @@ A SQL database script is included in the repository to simplify setup and deploy
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/restaurant-management-system.git
+git clone https://github.com/emrah-yurdusev/CyPizza
 ```
 
 2. Import the provided SQL file into MySQL.
