@@ -132,7 +132,8 @@ A SQL database script is included in the repository to simplify setup and deploy
 
 Role-based authentication and employee management.
 
-![Admin Panel](screenshots/admin_panel.png)
+![Admin Panel](<img width="1139" height="741" alt="image" src="https://github.com/user-attachments/assets/c40d0926-956a-47b7-81c7-13da4a391cbf" />
+)
 
 ### Cashier Panel
 
